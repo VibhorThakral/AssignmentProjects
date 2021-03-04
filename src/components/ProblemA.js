@@ -49,6 +49,7 @@ class ProblemA extends Component {
               {
                 this.inputRefs.map((key, index) => (
                   <TextInput
+                    key={index}
                     keyboardType='numeric'
                     maxLength={1}
                     onChangeText ={(input) => this.goToNext(index, input)}
